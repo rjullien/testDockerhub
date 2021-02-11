@@ -19,14 +19,3 @@ RUN flutter doctor -v
 RUN flutter channel master
 RUN flutter upgrade
 RUN flutter config --enable-web
-
-# Copy files to container and build
-RUN mkdir /app/
-COPY . /app/
-WORKDIR /app/
-# RUN flutter pub get // a tester si ko - ajoute par Camille
-# RUN flutter build web
-
-# Stage 2 - Create the run-time image
-# FROM nginx
-# COPY --from=build-env /app/build/web /usr/share/nginx/html
