@@ -1,5 +1,5 @@
 #Stage 1 - Install dependencies and build the app
-FROM debian:latest AS build-env
+FROM debian:10 AS build-env
 
 # Install flutter dependencies
 RUN apt-get update 
