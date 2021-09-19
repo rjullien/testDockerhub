@@ -18,7 +18,7 @@ env:
   # REGISTRY: ghcr.io
   # github.repository as <account>/<repo>
   # IMAGE_NAME: ${{ github.repository }}
-  IMAGE_NAME: camille0006.flutterwebNext
+  IMAGE_NAME: camille0006.flutterwebnext
 
 jobs:
   build:
@@ -68,7 +68,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: camille0006/flutterwebNext:latest
+          tags: camille0006/flutterwebnext:latest
 
       # Build and push Docker image with Buildx (don't push on PR)
       # https://github.com/docker/build-push-action
